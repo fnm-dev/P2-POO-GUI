@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="309.0" prefWidth="430.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Cadastro">
+                  <items>
+                    <MenuItem fx:id="menuItemElectricVehicle" mnemonicParsing="false" onAction="#onMenuItemElectricVehicleAction" text="Veículo Elétrico" />
+                        <MenuItem fx:id="menuItemGasolineVehicle" mnemonicParsing="false" onAction="#onMenuItemGasolineVehicleAction" text="Veículo à Gasolina" />
+                        <MenuItem fx:id="menuItemCategory" mnemonicParsing="false" onAction="#onMenuItemCategoryAction" text="Categoria" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Sobre">
+                  <items>
+                    <MenuItem fx:id="menuItemDevelopers" mnemonicParsing="false" onAction="#onMenuItemDevelopersAction" text="Desenvolvedores" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <AnchorPane prefHeight="298.0" prefWidth="430.0">
+               <children>
+                  <Label layoutX="208.0" layoutY="116.0" text="P2 - POO">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="216.0" layoutY="169.0" text="CRUD - Java OO e GUI">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
